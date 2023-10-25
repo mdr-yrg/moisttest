@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "游明朝", "Yu Mincho", YuMincho, serif;
+}
+
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+header .top {
+    text-align: center;
+    width: 100%;
+
+}
+
+.fade {
+    position: relative;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 5s, transform 5s;
+}
+
+.fade.active {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+
+.bg {
+    background-color: rgba(10, 123, 236, 0.116);
+background-size: cover;
+background-position: center top;
+    width: 100%;
+    height: 90px;
+    margin-top: 35px;
+    position: relative;
+}
+
+img.ranking {
+    width: 50%;
+    max-width: 300px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -26px;
+
+
+}
+
+
+
+.kouka {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+
+}
+
+.kouka p {
+    top: 70%;
+    text-align: left;
+    position: absolute;
+    margin-left: 10%;
+    line-height: 2;
+    z-index: 999;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: -1px -2px 4px #0b3ad1;
+}
+
+.kouka p em {
+    font-size: 1.3rem;
+}
+
+.kouka img.manzoku {
+    position: absolute;
+    top: 30px;
+    width: 30%;
+    margin-left: 10%;
+    max-width: 800px;
+}
+
+.kouka img.tuya {
+    width: 50%;
+    margin: 0 20px 0 auto;
+    display: block;
+    max-width: 800px;
+
+}
+
+.tokubetsu {
+    position: relative;
+
+}
+
+.tokubetsu img {
+    width: 100%;
+    margin-top: 30px;
+
+
+}
+
+
+
+.button a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 35%;
+    font-weight: bold;
+    background-color: #ea136a;
+    color: #fff;
+    padding: 10px 40px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    background-image: url(../img/arrow1.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: right 20px center;
+    animation: button 0.8s infinite;
+
+}
+
+
+@keyframes button {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0.98, 1.15);
+    }
+}
+
+.store {
+    text-align: center;
+    margin: 30px;
+
+}
+
+
+.store a {
+    color: #000;
+    margin: 20px 0;
+    padding: 25px 0;
+    font-weight: bold;
+    text-decoration: none;
+    min-width: 260px;
+    display: inline-block;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
+    appearance: none;
+    background-image: url(../img/arrow2.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: right 25px center;
+    text-align: center;
+}
+
+.store a:hover,
+.store a:focus {
+    background-color: #e2f1f8;
+}
+
+footer {
+
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    font-size: 0.8em;
+
+}
+
+footer li a {
+    text-decoration: none;
+}
+
+footer p {
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+}
+
+footer .sns a {
+    font-size: 0.8rem;
+
+}
+
+@media (min-width:768px) {
+
+
+    .kouka p {
+        font-size: 2rem;
+    }
+
+    .kouka p em {
+        font-size: 2.3rem;
+    }
+
+    .button a {
+        margin: 0 15px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+        background-size: 15px 15px;
+        background-position: right 35px center;
+    }
+
+    .store {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer {
+        background-image: url(../img/footerbg2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+
+    }
+
+    footer ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer li {
+        padding: 0 20px;
+    }
+
+}
+
+@media(max-width:767px) {
+    footer {
+        background-image: url(../img/footerbg1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+
+
+    }
+
+    footer .sns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 40px;
+        padding: 0;
+        align-items: flex-start;
+
+
+    }
+
+    footer li {
+        height: 20px;
+        padding-left: 14%;
+
+
+    }
+
+}
+
+
+
+@media(max-width:280px) {
+
+    img.ranking {
+        top: 0px;
+    }
+    .kouka p{
+        font-size: 0.8rem;
+    }
+    .kouka p em{
+        font-size: 1rem;
+    }
+    .button a {
+        font-size: 0.5rem;
+        padding: 5px 15px;
+        background-size: 9px 9px;
+        background-position: right 15px center;
+    }
+
+    .store {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
