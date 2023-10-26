@@ -15,11 +15,22 @@
             });
             observer.observe(targets[i]);
 
-
         }
+        const loading = document.querySelector('.loading');
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loading.classList.add('loaded');
+            }, 1500);
+
+        });
+
+
+
+
 
     });
 
-  
+
 
 })();
