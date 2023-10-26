@@ -29,7 +29,7 @@ img {
 .loader{
     opacity: 0;
     animation-name: fadeUpAnime;
-    animation-duration: 3s;
+    animation-duration: 1.8s;
     animation-fill-mode:forwards;
 }
 
@@ -47,7 +47,7 @@ img {
 .loading.loaded{
     opacity: 0;
     pointer-events: none;
-    transition: opacity 3s 2s;
+    transition: opacity 2s 1s;
 }
 
 header .top {
@@ -61,14 +61,16 @@ header .top {
     margin-top: 40px;
     opacity: 0;
     transform: translateY(30px);
-    transition: opacity 5s, transform 5s;
+    transition: opacity 3s, transform 5.5s;
+   
 }
+
+
 
 .fade.active {
     opacity: 1;
     transform: translateY(0px);
 }
-
 
 
 
