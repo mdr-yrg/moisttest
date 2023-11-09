@@ -128,19 +128,23 @@ img.ranking {
     top: 30px;
     width: 30%;
     margin-left: 10%;
-    max-width: 800px;
+    max-width: 500px;
 }
 
 .kouka img.tuya {
     width: 50%;
     margin: 0 20px 0 auto;
     display: block;
-    max-width: 800px;
+    max-width: 600px;
 
 }
 
+
+
 .tokubetsu {
     position: relative;
+    max-width: 1000px;
+  margin: auto;
 
 }
 
@@ -292,6 +296,25 @@ footer .sns a {
 
     footer li {
         padding: 0 20px;
+    }
+
+}
+
+@media(min-width:1500px){
+
+    .kouka p {
+      
+        margin-left: 25%;
+     
+    }
+    
+.kouka img.manzoku {
+  
+    margin-left: 25%;
+   
+}
+    .kouka img.tuya {
+        margin-right: 20%;
     }
 
 }
