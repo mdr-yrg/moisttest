@@ -300,24 +300,6 @@ footer .sns a {
 
 }
 
-@media(min-width:1500px){
-
-    .kouka p {
-      
-        margin-left: 25%;
-     
-    }
-    
-.kouka img.manzoku {
-  
-    margin-left: 25%;
-   
-}
-    .kouka img.tuya {
-        margin-right: 20%;
-    }
-
-}
 
 @media(max-width:767px) {
     footer {
